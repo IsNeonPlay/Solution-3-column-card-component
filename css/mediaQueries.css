@@ -1,0 +1,40 @@
+@media only screen and (min-width:980px) {
+
+  /*********** MAIN ***********/
+  .container {
+    max-width: 75em;
+    margin: 10em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /****** Cards ******/
+  .container__sedans:first-child {
+    border-radius: .5em 0 0 .5em;
+  }
+  .container__luxury:last-child {
+    border-radius: 0 .5em .5em 0;
+  }
+
+  .cards {
+    padding: 2.5em;
+    width: 18.75em;
+    height: 31.25em;
+    display: grid;
+    grid-template-rows: .3fr .2fr .8fr auto;
+  }
+
+  /**** title ****/
+  .container__title {
+    height: 2em;
+  }
+  /**** paragraph ****/
+  .container__paragraph {
+    width: 14em;
+  }
+  /**** links/buttons ****/
+  .container__link {
+    height: 2.7em;
+  }
+}

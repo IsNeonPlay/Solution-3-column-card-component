@@ -1,0 +1,106 @@
+/*********** GENERAL STYLES ***********/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --container-sedans: hsl(31, 77%, 52%);
+  --container-suvs: hsl(184, 100%, 22%);
+  --container-luxury: hsl(179, 100%, 13%);
+  --background-buttons-color: hsl(0, 0%, 95%);
+  --text-color: hsla(0, 0%, 100%, 0.75);
+  --font-titles: 'Big Shoulders Display', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: var(--background-buttons-color);
+  font-family: 'Lexend Deca', sans-serif;;
+}
+
+/*********** MAIN ***********/
+.container {
+  max-width: 20.65em;
+  margin: 5.5em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/****** Cards ******/
+.container__sedans {
+  background: var(--container-sedans);
+}
+.container__sedans:first-child {
+  border-radius: .5em .5em 0 0;
+}
+.container__suvs {
+  background: var(--container-suvs);
+}
+.container__luxury {
+  background: var(--container-luxury);
+}
+.container__luxury:last-child {
+  border-radius: 0 0 .5em .5em;
+}
+
+.cards {
+  padding: 3.125em;
+  height: 27.5em;
+  display: grid;
+}
+
+/**** title ****/
+.container__title {
+  font-family: var(--font-titles);
+  font-size: 2.5em;
+  color: var(--background-buttons-color);
+  text-transform: uppercase;
+}
+/**** paragraph ****/
+.container__paragraph {
+  font-size: .938em;
+  color: var(--text-color);
+  line-height: 1.6em;
+  display: flex;
+  justify-content: flex-start;
+}
+/**** links/buttons ****/
+.link-sedans {
+  color: var(--container-sedans);
+}
+.link-suvs {
+  color: var(--container-suvs);
+}
+.link-luxury {
+  color: var(--container-luxury);
+}
+.container__link {
+  width: 9.7em;
+  text-decoration: none;
+  background-color: var(--background-buttons-color);
+  border-radius: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.container__link:hover {
+  border: .1em solid var(--background-buttons-color);
+  color: var(--background-buttons-color);
+  background: transparent;
+}
+
+/*********** FOOTER ***********/
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
